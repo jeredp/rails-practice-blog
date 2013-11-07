@@ -11,3 +11,12 @@
  *= require_self
  *= require_tree .
  */
+
+.edit {
+    display: none;
+}
+
+.editing {
+    display: inline-block;
+    color: #f0f;
+}
