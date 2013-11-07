@@ -15,8 +15,8 @@
       <%= f.submit "Add Post", class: "btn btn-primary" %>
   <% end %>
 
-  <div class="container">
       <% @posts.each do |post| %>
+          <div class="container" id=<%= post.id %>>
               <div class="display">
                 <%= post.title %>
                 <%= post.message %>
@@ -28,8 +28,8 @@
                 <%= p.submit "Edit Post", class: "btn btn-primary" %>
                 <% end %>
               </div>
+          </div>
       <% end %>
-  </div>
 
 </div>
 

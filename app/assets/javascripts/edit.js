@@ -1,6 +1,7 @@
 $(document).ready(function()
 {
-    $('.container').click(function() {
-        $('.edit').addClass('editing');
+    $('.container').click(function(event) {
+        var id = $(this).attr('id');
+        $('#' + id + ' .edit').addClass('editing');
     });
 });
